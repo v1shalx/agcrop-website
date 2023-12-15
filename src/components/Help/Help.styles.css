@@ -1,0 +1,67 @@
+/* Help.styles.css */
+
+.carousel-slide-content {
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.carousel-slide-left-box {
+  margin-right: 30px; /* Adjust margin as needed */
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-slide-right-box {
+  flex: 1;
+  /* Add any additional styling as needed */
+}
+
+.carousel-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.carousel-button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ... (rest of the styles remain the same) */
+
+
+.carousel-button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: blue;
+}

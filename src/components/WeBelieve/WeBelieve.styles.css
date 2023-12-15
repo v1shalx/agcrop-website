@@ -1,0 +1,62 @@
+.WeBelieve{
+    background: rgba(246, 246, 246, 1);
+    text-align: center ;
+    padding: 3% 7%;
+}
+
+.WeBelieve-heading{
+    color: rgba(77, 77, 77, 1);
+    font-weight: 700;
+}
+
+.WeBelieve-blue-hedline{
+    color: rgba(2, 116, 188, 1);
+    font-weight: 700;
+}
+
+.WeBelieve-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    margin-top: 5%;
+}
+
+.WeBelieve-card{
+    box-shadow: 0px 1.392138957977295px 2.78427791595459px 0px rgba(171, 190, 209, 0.2);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.WeBelieve-card h3{
+    color: rgba(77, 77, 77, 1);
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.WeBelieve-card span{
+    color: rgba(2, 116, 188, 1);
+}
+
+.WeBelieve-card p{
+    color: rgba(77, 77, 77, 1);
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+.WeBelieve-card-icon{
+    width: 5.5rem;
+    height: 4.8rem;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .WeBelieve-cards{
+        flex-direction: column;
+    }
+
+    .WeBelieve-card{
+        margin: 5% 10%;
+    }
+
+}

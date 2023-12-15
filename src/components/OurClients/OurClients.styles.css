@@ -1,0 +1,38 @@
+.OurClients {
+    padding: 3%;
+    text-align: center;
+  }
+  
+  .OurClients h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(77, 77, 77, 1);
+  }
+  
+  .OurClients p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(77, 77, 77, 1);
+  }
+  
+  .Clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 3% 7%;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+
+    .OurClients{
+      margin-top: 15% !important;
+    }
+ 
+    .Clients {
+      gap: 2rem;
+    }
+    
+  }
