@@ -1,5 +1,7 @@
+// Navbar.js
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import './Navbar.styles.css';
 
 const Navbar = () => {
@@ -15,21 +17,21 @@ const Navbar = () => {
         <img src="images/logo.png" alt="Logo" />
       </div>
       <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-        <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>
+        <ScrollLink to="home" smooth={true} duration={500} onClick={toggleMenu}>
           Home
-        </Link>
-        <Link to="services" smooth={true} duration={500} onClick={toggleMenu}>
+        </ScrollLink>
+        <ScrollLink to="services" smooth={true} duration={500} onClick={toggleMenu}>
           Services
-        </Link>
-        <Link to="contact" smooth={true} duration={500} onClick={toggleMenu}>
+        </ScrollLink>
+        <ScrollLink to="contact" smooth={true} duration={500} onClick={toggleMenu}>
           Contact
-        </Link>
-        <Link to="about" smooth={true} duration={500} onClick={toggleMenu}>
+        </ScrollLink>
+        <ScrollLink to="about" smooth={true} duration={500} onClick={toggleMenu}>
           About
-        </Link>
-        <a href="#" className="enquire-btn">
+        </ScrollLink>
+        <RouterLink to="/enquire" className="enquire-btn">
           Enquire Now →
-        </a>
+        </RouterLink>
       </div>
       <div className="toggle-btn" onClick={toggleMenu}>
         &#9776;

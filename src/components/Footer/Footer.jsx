@@ -22,15 +22,15 @@ function Footer() {
           Copyright © 2023 Ajay Thopate. <br /> All rights reserved
         </p>
         <div className="footer-brand-social-icon">
-          <a className="icon" href="#">
+          <a className="icon" href="https://www.facebook.com/">
             <FaFacebook size={24} />
           </a>
 
-          <a className="icon" href="#">
+          <a className="icon" href="https://www.linkedin.com/">
             <FaLinkedin size={24} />
           </a>
 
-          <a className="icon" href="#">
+          <a className="icon" href="https://www.youtube.com/">
             <FaYoutube size={24} />
           </a>
         </div>

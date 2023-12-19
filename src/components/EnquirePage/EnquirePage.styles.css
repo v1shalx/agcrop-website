@@ -1,0 +1,26 @@
+/* EnquirePage.styles.css */
+.enquire-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+  }
+  
+  .enquire-page h2 {
+    color: #4caf50; /* Green color for the heading */
+  }
+  
+  .enquire-page p {
+    margin-bottom: 10px;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .enquire-page {
+      margin: 10px;
+    }
+  }
+  
