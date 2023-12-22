@@ -7,7 +7,7 @@ const EnquirePage = () => {
     <div className="enquire-page">
       <h2>Contact Us</h2>
       <p>For inquiries, please contact us at:</p>
-      <p>Mobile: +123 456 7890</p>
+      <p>Mobile: +91 801554088</p>
     </div>
   );
 };
