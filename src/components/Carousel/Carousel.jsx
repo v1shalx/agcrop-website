@@ -5,18 +5,42 @@ import './Carousel.styles.css';
 
 const slidesData = [
   {
-    heading: 'Electrical Control Panel 1',
-    content: 'What specific quality control measures are implemented in the manufacturing?',
+    heading: (
+      <span className="black-text">
+        <span className="blue-text">Pumping Solutions for</span> building and industrial Segment
+      </span>
+    ),
+    content: (
+      <span className="black-text content-text">
+        What are the key pumping requirements for the building and industrial sector?
+      </span>
+    ),
     imageSrc: '/images/image1.png',
   },
   {
-    heading: 'Electrical Control Panel 2',
-    content: 'What specific quality control measures are implemented in the manufacturing?',
+    heading: (
+      <span className="black-text">
+        <span className="blue-text">Electrical Control Panel</span> The best Built-in quality and After-sales service
+      </span>
+    ),
+    content: (
+      <span className="black-text content-text">
+        What specific quality control measures are implemented in the manufacturing?
+      </span>
+    ),
     imageSrc: '/images/2nd.svg',
   },
   {
-    heading: 'Electrical Control Panel 3',
-    content: 'What specific quality control measures are implemented in the manufacturing?',
+    heading: (
+      <span className="black-text">
+        <span className="blue-text">Fire Fighting Systems</span> for commercial and industrial applications
+      </span>
+    ),
+    content: (
+      <span className="black-text content-text">
+        What factors should be considered when designing a fire fighting system?
+      </span>
+    ),
     imageSrc: '/images/3rd.svg',
   },
 ];
@@ -36,10 +60,13 @@ const Carousel = () => {
             <div className="carousel-slide-content">
               <div className="carousel-slide-left-box">
                 <h1 className="carousel-heading">
-                  <span className="carousel-blue-headline">{slide.heading}</span>
+                  {slide.heading}
+                  <br />
                   {slide.content}
+                  <div>
+                    <button className="carousel-button">Enquire Now</button>
+                  </div>
                 </h1>
-                <button className="carousel-button">Enquire Now</button>
               </div>
               <div className="carousel-slide-right-box">
                 <img className="carousel-img" src={slide.imageSrc} alt="" />

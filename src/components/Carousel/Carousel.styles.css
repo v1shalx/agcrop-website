@@ -1,77 +1,96 @@
 /* Carousel.styles.css */
 
 .custom-carousel {
-    position: relative;
-    max-width: 900px;
-    
-    margin: auto;
-    overflow: hidden;
-  }
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-slide-left-box {
+  flex: 1;
+}
+
+.carousel-heading {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.carousel-blue-headline {
+  color: #3498db;
+}
+
+.carousel-button {
+  background-color: #0274bc; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.carousel-slide-right-box {
+  flex: 1;
+  text-align: right;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #3498db;
+}
+
+.black-text {
+  color:#4d4d4d;
+  font: 40px;
+}
+
+.blue-text {
+  color:#0274BC;
+  font: 40px;
+}
+
+.content-text {
+  font-size: 12px;
+  color: #1d1b1b;
   
-  .carousel-container {
-    display: flex;
-    /* transition: transform 0.5s ease-in-out; */
-  }
-  
-  .carousel-slide {
-    width: 100%;
-    flex-shrink: 0;
-  }
-  
-  .carousel-slide-content {
-    display: flex;
-  }
-  
-  .carousel-slide-left-box,
-  .carousel-slide-right-box {
-    flex: 1;
-  }
-  
-  .carousel-slide-right-box {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 100px; /* Add margin to create a gap between content and image */
-  }
-  
-  .carousel-img {
-    max-width: 100%;
-    height: auto;
-    height: px;
-    object-fit: cover;
-  }
-  
-  .carousel-heading {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: blue;
-  }
-  
-  .carousel-button {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .carousel-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  
-  .carousel-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: grey;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .carousel-dot.active {
-    background-color: blue;
-  }
-  
+}

@@ -1,4 +1,4 @@
-.calender{
+/* .calender{
     width: 100%;
     height: 100%;
     padding: 3% 7%;
@@ -55,4 +55,43 @@
         display: none;
     }
     
-}
+} */
+
+
+
+/* Calender.styles.css */
+
+.calender {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .calender__left {
+    flex: 1;
+    max-width: 600px; /* Adjust the max-width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .calender__right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+    
+  }
+  
+  /* Add responsive styling as needed */
+  @media screen and (max-width: 768px) {
+    .calender {
+      flex-direction: column;
+    }
+  
+    .calender__left,
+    .calender__right {
+      width: 100%;
+    }
+  }
+  

@@ -32,21 +32,25 @@ const Home = () => {
       <Element name="home">
         <Carousel />
       </Element>
+      
       <Element name="clients">
         <OurClients />
       </Element>
       <Element name="believe">
         <WeBelieve />
       </Element>
-      <Element name="achievements">
-        <Achievements />
-      </Element>
       <Element name="help">
         <Help />
+      </Element>
+      
+      <Element name="achievements">
+        <Achievements />
       </Element>
       <Element name="calender">
         <Calender />
       </Element>
+     
+      
       <Element name="about">
         <About />
       </Element>
