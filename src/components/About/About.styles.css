@@ -1,8 +1,8 @@
-.About {
+/* .About {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Adjust the padding according to your design */
+  padding: 20px; 
 }
 
 .About-left-side,
@@ -14,9 +14,9 @@
 }
 
 .about-img-1 {
-  width: 260px; /* Set the desired width */
-  height: 360px; /* Set the desired height */
-  object-fit: cover; /* Maintain aspect ratio */
+  width: 260px; 
+  height: 360px; 
+  object-fit: cover; 
 }
 
 .About-heading {
@@ -30,7 +30,54 @@
   text-align: center;
 }
 
-/* Additional styling if needed */
+
 .centered {
   text-align: center;
+} */
+
+
+.About {
+  display: flex;
+  flex-direction: column; /* Change to column for mobile */
+  align-items: center;
+  padding: 20px; /* Adjust the padding according to your design */
+}
+
+.About-left-side,
+.About-right-side {
+  flex: 1;
+  text-align: center; /* Center text for mobile */
+}
+
+.about-img-1 {
+  width: 100%; /* Set image width to 100% for mobile */
+  max-width: 260px; /* Set the maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.About-heading {
+  font-size: 24px;
+}
+
+.About-para {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Additional styling if needed */
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .About {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .About-left-side,
+  .About-right-side {
+    flex: auto; /* Take full width for smaller screens */
+  }
+
+  .about-img-1 {
+    max-width: 100%; /* Set maximum image width to 100% for smaller screens */
+  }
 }

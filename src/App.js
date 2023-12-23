@@ -39,15 +39,16 @@ const Home = () => {
       <Element name="believe">
         <WeBelieve />
       </Element>
+      <Element name="calender">
+        <Calender />
+      </Element>
+     
       <Element name="help">
         <Help />
       </Element>
       
       <Element name="achievements">
         <Achievements />
-      </Element>
-      <Element name="calender">
-        <Calender />
       </Element>
      
       

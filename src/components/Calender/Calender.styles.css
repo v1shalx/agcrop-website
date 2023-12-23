@@ -62,36 +62,39 @@
 /* Calender.styles.css */
 
 .calender {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden; /* Add this to prevent horizontal overflow */
+}
+
+.calender__left {
+  flex: 1;
+  max-width: 600px; /* Adjust the max-width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%; /* Ensure 100% width on smaller screens */
+}
+
+.calender__right {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%; /* Ensure 100% width on smaller screens */
+}
+
+/* Add responsive styling as needed */
+@media screen and (max-width: 768px) {
+  .calender {
+    flex-direction: column;
   }
-  
-  .calender__left {
-    flex: 1;
-    max-width: 600px; /* Adjust the max-width as needed */
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
+
+  .calender__left,
   .calender__right {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    
+    width: 100%;
+    max-width: none; /* Reset max-width for smaller screens */
   }
-  
-  /* Add responsive styling as needed */
-  @media screen and (max-width: 768px) {
-    .calender {
-      flex-direction: column;
-    }
-  
-    .calender__left,
-    .calender__right {
-      width: 100%;
-    }
-  }
-  
+}
