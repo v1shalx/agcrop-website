@@ -1,55 +1,15 @@
-/* .About {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px; 
-}
-
-.About-left-side,
-.About-right-side {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-img-1 {
-  width: 260px; 
-  height: 360px; 
-  object-fit: cover; 
-}
-
-.About-heading {
-  font-size: 24px;
-  text-align: center;
-}
-
-.About-para {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-
-.centered {
-  text-align: center;
-} */
-
-
 /* About.styles.css */
 
 .company-info-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; /* Stack elements vertically on small screens */
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
 .image-container {
-  flex: 0 0 auto; /* Prevent image from growing */
-  margin-right: 20px;
+  margin-bottom: 20px; /* Add some spacing between image and content */
 }
 
 .about-img-1 {
@@ -58,27 +18,22 @@
 }
 
 .content-container {
-  flex: 1 1 auto; /* Allow content to grow */
-}
-
-/* Add additional styling as needed */
-.About-heading {
-  font-size: 24px;
-  color: #333;
-}
-
-.About-para {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.content-container {
-  flex: 1 1 auto; /* Allow content to grow */
   text-align: center; /* Center the content */
 }
 
 .About-heading {
   font-size: 24px;
   color: #333;
+}
+
+/* Add media query for responsiveness */
+@media (min-width: 768px) {
+  .company-info-container {
+    flex-direction: row; /* Align elements side by side on larger screens */
+  }
+
+  .image-container {
+    margin-bottom: 0; /* Reset spacing for larger screens */
+    margin-right: 20px;
+  }
 }
