@@ -1,4 +1,4 @@
-.About {
+/* .About {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,4 +33,52 @@
 
 .centered {
   text-align: center;
+} */
+
+
+/* About.styles.css */
+
+.company-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 0 0 auto; /* Prevent image from growing */
+  margin-right: 20px;
+}
+
+.about-img-1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-container {
+  flex: 1 1 auto; /* Allow content to grow */
+}
+
+/* Add additional styling as needed */
+.About-heading {
+  font-size: 24px;
+  color: #333;
+}
+
+.About-para {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.content-container {
+  flex: 1 1 auto; /* Allow content to grow */
+  text-align: center; /* Center the content */
+}
+
+.About-heading {
+  font-size: 24px;
+  color: #333;
 }

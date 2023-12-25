@@ -12,11 +12,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${isMenuOpen ? 'open' : ''}`}>
       <div className="logo">
         <img src="images/logo.png" alt="Logo" />
       </div>
-      <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
+      <div className="menu">
         <ScrollLink to="home" smooth={true} duration={500} onClick={toggleMenu}>
           Home
         </ScrollLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
         <ScrollLink to="about" smooth={true} duration={500} onClick={toggleMenu}>
           About
         </ScrollLink>
-        <RouterLink to="/enquire" className="enquire-btn">
+        <RouterLink to="/enquire" className="enquire-btn" onClick={toggleMenu}>
           Enquire Now →
         </RouterLink>
       </div>
